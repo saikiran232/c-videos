@@ -1,0 +1,17 @@
+nclude <stdio.h>
+#include <string.h>
+int main()
+{
+	    char s[] = "Aticleworld";
+	    char *ptr = memchr(s,'w',500);
+		            if (ptr != NULL)
+		                {
+		                   printf ("'c' found at position %d.\n", ptr-s+1);
+		                   printf ("search character found:  %s\n", ptr);
+		                }
+		            else
+	                    {
+	                    printf ("search character not found\n");
+		            }
+                           return 0;
+}
